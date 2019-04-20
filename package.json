@@ -1,0 +1,28 @@
+{
+  "name": "@nebrob/slideshow",
+  "version": "1.0.0",
+  "description": "An efficient slideshow for all your needs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/benjaminrobinet/slideshow.git"
+  },
+  "keywords": [
+    "slideshow",
+    "carousel",
+    "npm",
+    "infinite"
+  ],
+  "author": "Benjamin Robinet",
+  "license": "GPL-3.0-only",
+  "bugs": {
+    "url": "https://github.com/benjaminrobinet/slideshow/issues"
+  },
+  "homepage": "https://github.com/benjaminrobinet/slideshow#readme",
+  "devDependencies": {
+    "laravel-mix": "^4.0.15"
+  }
+}
