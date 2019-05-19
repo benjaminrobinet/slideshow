@@ -1,17 +1,31 @@
-export default class Slideshow {
-    constructor(container, items) {
+import { EventEmitter } from 'tiny-events';
+
+const _config = {
+    threshold: 1,
+    nextEl: '.next',
+    previousEl: '.next',
+};
+
+export default class Slideshow extends EventEmitter {
+    constructor(container, items, config) {
+        super();
+
         this.container = container;
         this.items = items;
 
-        console.log(container);
-        console.log(items);
-        // setup = setup.bind(this);
-        // this.slideshow = setup(container, items);
+        this.config = Object.assign({}, _config, config);
+
+        console.log(this.config, _config);
+
+        this.container.addEventListener('drag', onDrag);
+        this.container.addEventListener('dragend', onDragEnd);
     }
 }
 
-// let setup = function(){
-//     console.log(this.container);
-//     console.log(this.items);
-//     // return
-// };
+function onDrag(event){
+    // console.log('drag', event);
+}
+
+function onDragEnd(event){
+    // console.log('dragEnd', event);
+}

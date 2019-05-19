@@ -3,8 +3,7 @@ let mix = require('laravel-mix');
 /*
 * Slideshow Package
 * */
-mix.js('src/index.js', 'dist/');
-// mix.babel('dist/index.js', 'dist/index.js');
+mix.babel('src/index.js', 'dist/index.js');
 
 mix.sourceMaps();
 mix.disableNotifications();

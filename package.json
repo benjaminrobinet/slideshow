@@ -31,5 +31,8 @@
     "cross-env": "^5.2.0",
     "laravel-mix": "^4.0.15",
     "vue-template-compiler": "^2.6.10"
+  },
+  "dependencies": {
+    "tiny-events": "^1.0.1"
   }
 }
